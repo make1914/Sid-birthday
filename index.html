@@ -1,1 +1,129 @@
-<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <title>Happy Birthday Sidrah!</title> <style> body { margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #ff99cc, #ff66b3); font-family: 'Arial', sans-serif; overflow: hidden; color: white; } .page { display: none; text-align: center; font-size: 40px; padding: 20px; } .active { display: block; } .gulabo { animation: fadeIn 2s; } .birthday { animation: bounce 1s; } .wishes { animation: slideIn 2s; } .fun { animation: wave 2s; } .shayari { animation: zoomIn 2s; } .final { animation: fadeIn 2s; } button { margin-top: 20px; padding: 10px 20px; font-size: 20px; background-color: #fff; color: #ff66b3; border: none; border-radius: 5px; cursor: pointer; } button:hover { background-color: #ff99cc; color: white; } .cake { font-size: 60px; animation: slice 1s infinite; } .cake-text { font-size: 30px; color: #fff; text-shadow: 2px 2px 4px #ff4081; } @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } } @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } } @keyframes slideIn { 0% { transform: translateX(-100%); } 100% { transform: translateX(0); } } @keyframes wave { 0% { transform: rotate(0deg); } 50% { transform: rotate(5deg); } 100% { transform: rotate(0deg); } } @keyframes zoomIn { 0% { transform: scale(0); } 100% { transform: scale(1); } } @keyframes slice { 0% { transform: rotate(0deg); } 50% { transform: rotate(10deg); } 100% { transform: rotate(0deg); } } </style> </head> <body> <div id="page1" class="page gulabo"> Gulabo, open kro isko Gulabo <br><button onclick="showPage(2)">Next</button> </div> <div id="page2" class="page birthday"> Let's celebrate birthday!<br> <span class="cake">🎂</span><br> <span class="cake-text">Sidrah</span><br> <button onclick="showPage(3)">Next</button> </div> <div id="page3" class="page wishes"> May your future be as bright as your smile and your life full of joy! <br><button onclick="showPage(4)">Next</button> </div> <div id="page4" class="page fun"> Remember our late-night talks and silly fights? Best moments ever! <br><button onclick="showPage(5)">Next</button> </div> <div id="page5" class="page shayari"> Dooriyan mita dein teri meri dosti se, <br> Har pal saath rahein dil ke raston se! <br><button onclick="showPage(6)">Next</button> </div> <div id="page6" class="page final"> Happy Birthday Sidrah, once again! <br><button onclick="showPage(1)">Back to Start</button> </div> <script src="https://cdnjs.cloudflare.com/ajax/libs/fireworks-js/1.2.1/fireworks.min.js"></script> <script> let currentPage = 1; function showPage(pageNum) { for (let i = 1; i <= 6; i++) { document.getElementById(`page${i}`).classList.remove('active'); } document.getElementById(`page${pageNum}`).classList.add('active'); if (pageNum === 2) { startFireworks(); } else { stopFireworks(); } } // Fireworks for Page 2 const fireworks = new Fireworks(document.body, { autoresize: true, opacity: 0.5, acceleration: 1.05, friction: 0.97, gravity: 1.5, particles: 50, trace: 3, explosion: 5, boundaries: { visible: false } }); function startFireworks() { fireworks.start(); } function stopFireworks() { fireworks.stop(); } showPage(1); // Start with page 1 </script> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Sidrah!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #ff99cc, #ff66b3);
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+            color: white;
+        }
+        .page {
+            display: none;
+            text-align: center;
+            font-size: 40px;
+            padding: 20px;
+        }
+        .active {
+            display: block;
+        }
+        .gulabo { animation: fadeIn 2s; }
+        .birthday { animation: bounce 1s; }
+        .wishes { animation: slideIn 2s; }
+        .fun { animation: wave 2s; }
+        .shayari { animation: zoomIn 2s; }
+        .final { animation: fadeIn 2s; }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 20px;
+            background-color: #fff;
+            color: #ff66b3;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff99cc;
+            color: white;
+        }
+        .cake {
+            font-size: 60px;
+            animation: slice 1s infinite;
+        }
+        .cake-text {
+            font-size: 30px;
+            color: #fff;
+            text-shadow: 2px 2px 4px #ff4081;
+        }
+        @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+        @keyframes bounce { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        @keyframes slideIn { 0% { transform: translateX(-100%); } 100% { transform: translateX(0); } }
+        @keyframes wave { 0% { transform: rotate(0deg); } 50% { transform: rotate(5deg); } 100% { transform: rotate(0deg); } }
+        @keyframes zoomIn { 0% { transform: scale(0); } 100% { transform: scale(1); } }
+        @keyframes slice { 0% { transform: rotate(0deg); } 50% { transform: rotate(10deg); } 100% { transform: rotate(0deg); } }
+    </style>
+</head>
+<body>
+    <div id="page1" class="page gulabo">
+        Gulabo, open kro isko Gulabo
+        <br><button onclick="showPage(2)">Next</button>
+    </div>
+    <div id="page2" class="page birthday">
+        Let's celebrate birthday!<br>
+        <span class="cake">🎂</span><br>
+        <span class="cake-text">Sidrah</span><br>
+        <button onclick="showPage(3)">Next</button>
+    </div>
+    <div id="page3" class="page wishes">
+        May your future be as bright as your smile and your life full of joy!
+        <br><button onclick="showPage(4)">Next</button>
+    </div>
+    <div id="page4" class="page fun">
+        Remember our late-night talks and silly fights? Best moments ever!
+        <br><button onclick="showPage(5)">Next</button>
+    </div>
+    <div id="page5" class="page shayari">
+        Dooriyan mita dein teri meri dosti se, <br> Har pal saath rahein dil ke raston se!
+        <br><button onclick="showPage(6)">Next</button>
+    </div>
+    <div id="page6" class="page final">
+        Happy Birthday Sidrah, once again!
+        <br><button onclick="showPage(1)">Back to Start</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fireworks-js/1.2.1/fireworks.min.js"></script>
+    <script>
+        let currentPage = 1;
+
+        function showPage(pageNum) {
+            for (let i = 1; i <= 6; i++) {
+                document.getElementById(`page${i}`).classList.remove('active');
+            }
+            document.getElementById(`page${pageNum}`).classList.add('active');
+
+            if (pageNum === 2) {
+                startFireworks();
+            } else {
+                stopFireworks();
+            }
+        }
+
+        // Fireworks for Page 2
+        const fireworks = new Fireworks(document.body, {
+            autoresize: true,
+            opacity: 0.5,
+            acceleration: 1.05,
+            friction: 0.97,
+            gravity: 1.5,
+            particles: 50,
+            trace: 3,
+            explosion: 5,
+            boundaries: { visible: false }
+        });
+
+        function startFireworks() { fireworks.start(); }
+        function stopFireworks() { fireworks.stop(); }
+
+        showPage(1); // Start with page 1
+    </script>
+</body>
+</html>
